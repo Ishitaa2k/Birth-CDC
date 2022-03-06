@@ -1,0 +1,3 @@
+SELECT sum(Ave_Pre_pregnancy_BMI)
+FROM bigquery-public-data.sdoh_cdc_wonder_natality.county_natality
+WHERE County_of_Residence= 'Saginaw County, MI' OR County_of_Residence='Salt Lake County, UT'
