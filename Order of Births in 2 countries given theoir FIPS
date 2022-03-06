@@ -1,0 +1,4 @@
+SELECT Births, Year,County_of_Residence_FIPS
+FROM bigquery-public-data.sdoh_cdc_wonder_natality.county_natality
+WHERE County_of_Residence_FIPS= '01015' OR County_of_Residence_FIPS='20045'
+order by County_of_Residence_FIPS  
