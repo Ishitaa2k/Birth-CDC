@@ -1,0 +1,4 @@
+SELECT aa.County_of_Residence, bb.Abnormal_Conditions_Checked_Desc
+FROM `bigquery-public-data.sdoh_cdc_wonder_natality.county_natality` as aa
+LEFT JOIN bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_abnormal_conditions as bb
+ON aa.County_of_Residence = bb.Abnormal_Conditions_Checked_Desc
