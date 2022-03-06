@@ -1,0 +1,4 @@
+SELECT COUNT(Ave_Birth_Weight_gms)
+FROM bigquery-public-data.sdoh_cdc_wonder_natality.county_natality
+WHERE County_of_Residence='Calhoun County, AL' OR County_of_Residence=' Lake County, IN'
+GROUP BY County_of_Residence
