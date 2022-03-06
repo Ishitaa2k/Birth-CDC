@@ -1,0 +1,4 @@
+SELECT ab.Ave_Pre_pregnancy_BMI, bc.Congenital_Abnormality_Checked_YN
+FROM bigquery-public-data.sdoh_cdc_wonder_natality.county_natality as ab
+RIGHT JOIN bigquery-public-data.sdoh_cdc_wonder_natality.county_natality_by_congenital_abnormalities as bc
+ON ab.Ave_Pre_pregnancy_BMI = bc.Congenital_Abnormality_Checked_YN
